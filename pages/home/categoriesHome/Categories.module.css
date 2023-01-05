@@ -1,0 +1,21 @@
+.mainBanner {
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainBanner .product {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.mainBanner .product .box {
+  padding: 15px;
+  margin: 10px;
+  margin-top: 30px;
+  background-color: #f8f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
