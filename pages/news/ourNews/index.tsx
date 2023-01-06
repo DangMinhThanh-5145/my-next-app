@@ -2,8 +2,18 @@ import Image from "next/image";
 import React from "react";
 import Styles from "./OurNews.module.css";
 import OurNewsIcon from "../../../src/assets/icons/ourNews.svg";
+import { GetServerSideProps } from "next";
+import { Pages } from "../../api/pages";
 
-export interface OurNewsProps {}
+export interface OurNewsProps {
+  title: String;
+  list: Array<Pages>;
+}
+export const getServerSideProps: GetServerSideProps = async () => {
+  const res = await fetch(`https://mic.t-solution.vn/api/v2/pages`);
+  const data = await res.json();
+  return { props: { data } };
+};
 
 const OurNews = (props: OurNewsProps) => {
   return (
