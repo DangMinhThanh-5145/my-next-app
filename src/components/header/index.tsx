@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Logo from "../../assets/icons/logo.svg";
 import styles from "../../../styles/Home.module.css";
+import Link from "next/link";
 
 export interface HeaderProps {}
 
@@ -13,12 +14,36 @@ const Header = (props: HeaderProps) => {
       </div>
       <div className={styles.box}>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Products</li>
-          <li>News</li>
-          <li>Gallery</li>
-          <li>Contact</li>
+          <li>
+            <Link href="/home" style={{ textDecoration: "none" }}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" style={{ textDecoration: "none" }}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/product" style={{ textDecoration: "none" }}>
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link href="/news" style={{ textDecoration: "none" }}>
+              News
+            </Link>
+          </li>
+          <li>
+            <Link href="/gallery" style={{ textDecoration: "none" }}>
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" style={{ textDecoration: "none" }}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
       <div className={styles.box}>

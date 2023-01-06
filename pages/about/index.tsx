@@ -1,11 +1,18 @@
 import React from "react";
+import Footer from "../../src/components/footer";
+import Header from "../../src/components/header";
+import AboutMission from "./aboutMission";
+import AboutStory from "./aboutStory";
 
 export interface AboutPageProps {}
 
 const AboutPage = (props: AboutPageProps) => {
   return (
     <div>
-      <h1>About Page</h1>
+      <Header />
+      <AboutStory />
+      <AboutMission />
+      <Footer />
     </div>
   );
 };

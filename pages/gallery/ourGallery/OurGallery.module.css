@@ -1,0 +1,20 @@
+.ourGalleryContainer {
+}
+.ourGalleryContainer .icon {
+  display: flex;
+  justify-content: center;
+}
+.ourGalleryContainer .listGallery {
+  display: flex;
+  width: 90%;
+  margin: 5%;
+  justify-content: space-around;
+}
+.ourGalleryContainer .listGallery .items {
+  width: 32%;
+}
+.ourGalleryContainer .listGallery .items .image {
+  height: 240px;
+  border-radius: 5px;
+  background-color: #b1b5c3;
+}

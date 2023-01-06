@@ -12,7 +12,7 @@ const Banner = (props: BannerProps) => {
         justifyContent: "center",
       }}
     >
-      <Image src={BannerImage} alt="Banner" width={1300} />
+      <Image src={BannerImage} alt="Banner" priority={true} width={1300} />
     </div>
   );
 };

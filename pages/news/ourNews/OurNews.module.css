@@ -1,0 +1,28 @@
+.ourNewsContainer {
+}
+.ourNewsContainer .button {
+  display: flex;
+  justify-content: center;
+}
+.ourNewsContainer .icons {
+  display: flex;
+  justify-content: center;
+}
+.ourNewsContainer .newsList {
+  display: flex;
+  width: 94%;
+  margin: 3%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ourNewsContainer .newsList .newsItem {
+  width: 32%;
+  margin: 0.5%;
+}
+.ourNewsContainer .newsList .newsItem .image {
+  width: 96%;
+  height: 264px;
+  margin: 2%;
+  border-radius: 5px;
+  background-color: #b1b5c3;
+}

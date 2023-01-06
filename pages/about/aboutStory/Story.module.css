@@ -1,0 +1,16 @@
+.storyContainer {
+  width: 94%;
+  margin-left: 3%;
+}
+.storyContainer .title {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 30px;
+}
+.storyContainer .image {
+  width: 100%;
+  height: 563px;
+  background-color: #b1b5c4;
+  border-radius: 5px;
+}

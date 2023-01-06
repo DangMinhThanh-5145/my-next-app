@@ -1,11 +1,16 @@
 import React from "react";
+import Footer from "../../src/components/footer";
+import Header from "../../src/components/header";
+import OurGallery from "./ourGallery";
 
 export interface GalleryPageProps {}
 
 const GalleryPage = (props: GalleryPageProps) => {
   return (
     <div>
-      <h1>Gallery Page</h1>
+      <Header />
+      <OurGallery />
+      <Footer />
     </div>
   );
 };
